@@ -68,9 +68,7 @@ try:
     cont = np.array(cont)
 
     # Read in atoms.dat to get atomic data
-    # EDIT: Path for the location of your atoms.dat file
-    transition_library = np.genfromtxt('/home/achernar-data/mathes/VULTURE/UVES_SQUAD/atoms_UVES.dat',unpack=True,dtype=None)
-    #transition_library = np.genfromtxt('/Users/Nigel/SOFTWARE/x_corr/atoms_UVES.dat',unpack=True,dtype=None)
+    transition_library = fzl_params.transition_library
 
     # Transition Wavelengths and their power/noise arrays
     species = {}
@@ -79,9 +77,8 @@ try:
     working = {}
     sigma = {}
 
-    # EDIT: Add transitions. These are the lines you're looking for. 
-    search_ions = ['CIV', 'MgII']
-    #search_ions = ['SiIV', 'FeII']
+    # Add transitions. These are the lines you're looking for.
+    search_ions = fzl_params.search_ions
 
     # Loop through atoms.dat and match with search_ions
     # Initialize arrays to search for transitions
@@ -118,13 +115,11 @@ try:
     LIGHTSPEED = 299792.458 # km/s
     LYA = 1215.6 # angstrom
 
-    # EDIT: Spectral resolution
-    #spectral_res = 42000. # UVES
-    spectral_res = 45000. # KECK
+    # Spectral resolution
+    spectral_res = fzl_params.spectral_res
 
-    # EDIT: Redshift resolution
-    #delta_z = 0.00003 # = 9 km/s UVES
-    delta_z = 0.00001 # = 3 km/s KECK
+    # Redshift resolution
+    delta_z = fzl_params.delta_z
 
     # Read in spectra
 
@@ -163,8 +158,6 @@ try:
     logger.info("========== Initializing Search Arrays ==========\n")
     
     # Search redward of the Lya emission
-    # EDIT: Remove if/else logic if you don't care about Lya emission being a blue limit
-    # (only say blue_limit = wav[0])
     if ( (LYA * (1. + zem)) > wav[0]):
         blue_limit = LYA * (1. + zem)
     else:
@@ -173,7 +166,6 @@ try:
     logger.info("Searching redward of Lya, starting at {} A.".format(blue_limit))
 
     # Emission redshift of quasar - 3000 km/s
-    # EDIT: Define how close to the QSO redshift you want to be (in redshift space)
     emission_limit = 1. + zem - 0.01
 
     red_limit = {}
@@ -201,7 +193,6 @@ try:
     search_flux[np.where(search_flux > 1.15)] = 1.
 
     # Avoid Telluric features, in order from strongest to weakest
-    # EDIT: can add/remove selective regions you don't wish to search in
     # 9300 - 9630 feature
     search_flux[np.where((search_wav > 9300.) & (search_wav < 9630.))] = 1.
 
@@ -220,8 +211,6 @@ try:
     search_err[np.where(search_err < 0.)] = 0.
 
     # Remove negative flux
-    #search_sig[np.where(search_flux < 0.)] = 0.
-    #search_err[np.where(search_flux < 0.)] = 0.
     search_flux[np.where(search_flux < 0.)] = 0.
 
     #=================== Make the redshift arrays (z search range) ======================
@@ -256,7 +245,6 @@ try:
             killflag.append(1)
 
     # If no wavelength coverage for any ions, kill the program and report no detections
-    # EDIT: Hard coded ion names, kind of
     if ( np.count_nonzero(killflag) == 0 ):
         logger.info("========== No wavelength coverage for {} or {}, exiting with no detections ==========\n".format(search_ions[0],search_ions[1]))
         sys.exit("========== No wavelength coverage for {} or {}, exiting with no detections ==========\n".format(search_ions[0],search_ions[1]))
@@ -573,10 +561,7 @@ try:
             counter += 1                
         
         # Line Ratio Check
-        # EDIT: Can tune how strict you are about the doublet ratio: if weak_line/strong_line < doublet_ratio, throw out.
-        # Higher values of dub_ratio = throw out more lines. DO NOT EXCEED 0.5 (for obvious reasons)
-        # Can comment lines out if you don't want this constraint applied.
-        dub_ratio = 0.3
+        dub_ratio = fzl_params.dub_ratio
         line_redshifts[specie] = line_ratio_check(specie,line_redshifts[specie],noise[strongest_trans[specie]],scaledpower[strongest_trans[specie]],scaledpower[second_trans[specie]],redshift[specie],dub_ratio)
 
         # Calculate EW Detection limit for each real detection
@@ -627,11 +612,11 @@ try:
         f.write("--------------------------------------------------------------------------\n")
     f.close()
 
-    # EDIT: Plotting routines. Can edit velocity window and number of plots per page (ax array)
+    # Plotting routines. Can edit velocity window in params file
     # Outputs plots based upon your atoms.dat input file so you can see all the transitions.
     # Red = in the Lya forest
     # Blue = redward of Lya forest
-    velwindow = 500. #km/s
+    velwindow = fzl_params.velwindow
     velocity = {}
     vel_flux = {}
     vel_err = {}

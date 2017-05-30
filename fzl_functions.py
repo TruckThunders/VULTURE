@@ -91,7 +91,6 @@ def asymmetry_check(line_redshifts, ion_spectrum, redshift):
         # Delete lines based upon asymmetry around the line center
         if ((abs(leftup - rightup) > 4) & (abs(leftdown - rightdown) > 4)):
             line_redshifts = np.delete(line_redshifts,count)
-            #print "Deleted line (asymmetry): {}".format(detection)
             func_logger.info("Deleted line (asymmetry): {}".format(detection))
             count -= 1
         count += 1
@@ -126,45 +125,6 @@ def line_ratio_check(specie, line_redshifts, ion_spectrum1, ion_spectrum2,redshi
                 break
         count += 1
     return line_redshifts
-
-# Insert fake lines to test detection sensitivity ***Height is passed by reference
-def insert_lines_OLD(spectrum,wavelengths,resolution,z,tranname,eqwidth):
-    rest_wavs = []
-    if (tranname == 'MgII'):
-        rest_wavs.append(2796.353786)
-        rest_wavs.append(2803.530982)
-    if (tranname == 'CIV'):
-        rest_wavs.append(1548.195)
-        rest_wavs.append(1550.770)
-
-    for lambda_r in rest_wavs:
-        testwidth = 0.
-        # Calculate gaussian parameters
-        b = lambda_r * (1+z)
-        c = (b / resolution) * (1. / (2.*np.sqrt(2.*np.log(2))))
-        if (lambda_r == 2796.353786):
-            a = eqwidth / (c * np.sqrt(2. * np.pi))
-        if (lambda_r == 2803.530982):
-            a = eqwidth / (1.5 * c * np.sqrt(2. * np.pi))
-        if (lambda_r == 1548.195):
-            a = eqwidth / (c * np.sqrt(2. * np.pi))
-        if (lambda_r == 1550.770):
-            a = eqwidth / (1.5 * c * np.sqrt(2. * np.pi))
-        npix = (resolution * 4.) / b
-        half_width = int(np.floor(npix/2.))
-
-        middle = find_nearest(wavelengths,b)
-        middle = np.where(wavelengths == middle)
-        middle = middle[0]
-
-        #print "b = {}. c = {}. a = {}.".format(b,c,a)
-
-        for i in range(-half_width,half_width):
-            spectrum[middle+i] = 1.
-            spectrum[middle+i] -= a * np.exp(-((wavelengths[middle+i] - b)**2.)/(2.*c*c))
-            testwidth += (1.-spectrum[middle+i])*(wavelengths[middle]-wavelengths[middle-1])
-
-    return (a,c,spectrum)
 
 # Insert fake lines to test detection sensitivity
 def insert_lines(spectrum,wavelengths,resolution,z,eqwidth,lambda_r):
