@@ -1,0 +1,64 @@
+2015-05-03 10:55:51,047 - __main__ - INFO - ========== Reading in Spectrum ==========
+
+2015-05-03 10:55:51,048 - __main__ - INFO - Ignored first 0 lines of data because they were dumb.
+
+2015-05-03 10:55:51,850 - __main__ - INFO - ========== Initializing Search Arrays ==========
+
+2015-05-03 10:55:51,851 - __main__ - INFO - Searching redward of Lya, starting at 3936.54413557 A.
+2015-05-03 10:55:51,862 - __main__ - INFO - FeII blue limit = 3936.54413557 red limit = 6703.2457362
+2015-05-03 10:55:51,862 - __main__ - INFO - FeII min_z = 0.679259715866 max_z = 1.578.
+2015-05-03 10:55:51,862 - __main__ - INFO - CIV blue limit = 3936.54413557 red limit = 3997.88506
+2015-05-03 10:55:51,862 - __main__ - INFO - CIV min_z = 1.5426668705 max_z = 1.578.
+2015-05-03 10:55:51,862 - __main__ - INFO - MgII blue limit = 3936.54413557 red limit = 7227.502918
+2015-05-03 10:55:51,863 - __main__ - INFO - MgII min_z = 0.407742707488 max_z = 1.578.
+2015-05-03 10:55:52,500 - __main__ - INFO - Run time for prep work: 0.02 mins.
+
+2015-05-03 10:55:52,501 - __main__ - INFO - ========== Beginning Filtering Routines ==========
+
+2015-05-03 10:55:52,504 - __main__ - INFO - Min Value Established: [ 67899.17137599]
+2015-05-03 10:55:52,506 - __main__ - INFO - Max Value Established: [ 67909.17137599]
+2015-05-03 10:58:08,605 - __main__ - INFO - Run time to correlation: 2.29 mins.
+
+2015-05-03 10:58:08,605 - __main__ - INFO - ========== Calculating Power Spectrum Errors ==========
+
+2015-05-03 11:01:23,475 - __main__ - INFO - Params for detection limit fit: m = 0.319027314832   b = 3.53209116886e-05.
+
+2015-05-03 11:01:23,479 - __main__ - INFO - ========== Finding Lines and Filtering Bad Ones ==========
+
+2015-05-03 11:01:23,481 - __main__ - INFO - ========== FeII Lines detected. Culling bad lines ==========
+
+2015-05-03 11:01:23,484 - __main__ - INFO - --------------------------------------------------------------------------
+2015-05-03 11:01:23,484 - __main__ - INFO - Detected 2 FeII lines:
+2015-05-03 11:01:23,484 - __main__ - INFO - [ 0.69486  0.69528]
+2015-05-03 11:01:23,485 - __main__ - INFO - Detection limit for each detection (Angstrom):
+2015-05-03 11:01:23,485 - __main__ - INFO - [ 0.06971684  0.07029464]
+2015-05-03 11:01:23,485 - __main__ - INFO - Line sigma:
+2015-05-03 11:01:23,486 - __main__ - INFO - [ 13.7830676   23.14660712]
+2015-05-03 11:01:23,486 - __main__ - INFO - --------------------------------------------------------------------------
+
+2015-05-03 11:01:23,487 - __main__ - INFO - ========== CIV Lines detected. Culling bad lines ==========
+
+2015-05-03 11:01:23,488 - __main__ - INFO - --------------------------------------------------------------------------
+2015-05-03 11:01:23,488 - __main__ - INFO - Detected 0 CIV lines:
+2015-05-03 11:01:23,488 - __main__ - INFO - []
+2015-05-03 11:01:23,488 - __main__ - INFO - Detection limit for each detection (Angstrom):
+2015-05-03 11:01:23,488 - __main__ - INFO - []
+2015-05-03 11:01:23,489 - __main__ - INFO - Line sigma:
+2015-05-03 11:01:23,489 - __main__ - INFO - []
+2015-05-03 11:01:23,489 - __main__ - INFO - --------------------------------------------------------------------------
+
+2015-05-03 11:01:23,491 - __main__ - INFO - ========== MgII Lines detected. Culling bad lines ==========
+
+2015-05-03 11:01:23,494 - __main__ - INFO - --------------------------------------------------------------------------
+2015-05-03 11:01:23,494 - __main__ - INFO - Detected 3 MgII lines:
+2015-05-03 11:01:23,495 - __main__ - INFO - [ 0.69511  1.30828  1.30876]
+2015-05-03 11:01:23,495 - __main__ - INFO - Detection limit for each detection (Angstrom):
+2015-05-03 11:01:23,495 - __main__ - INFO - [ 0.08451206  0.06525698  0.06513302]
+2015-05-03 11:01:23,496 - __main__ - INFO - Line sigma:
+2015-05-03 11:01:23,496 - __main__ - INFO - [ 14.70046214   5.38288186  14.12915222]
+2015-05-03 11:01:23,497 - __main__ - INFO - --------------------------------------------------------------------------
+
+2015-05-03 11:01:28,776 - __main__ - INFO - Saved plot files in detection redshift directories.
+2015-05-03 11:01:28,776 - __main__ - INFO - Saved plot files in detection redshift directories.
+2015-05-03 11:01:36,778 - __main__ - INFO - Saved plot files in detection redshift directories.
+2015-05-03 11:01:36,778 - __main__ - INFO - Total run time: 5.76 mins.

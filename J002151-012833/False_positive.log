@@ -1,0 +1,7 @@
+2015-05-03 11:01:23,482 - fzl_functions - INFO - Deleted FeII line (Bad doublet ratio): 1.33188
+2015-05-03 11:01:23,487 - fzl_functions - INFO - Deleted CIV line (Bad doublet ratio): nan
+2015-05-03 11:01:23,491 - fzl_functions - INFO - Deleted MgII line (Bad doublet ratio): 0.694345
+2015-05-03 11:01:23,492 - fzl_functions - INFO - Deleted MgII line (Main Transition < Secondary): 0.980665
+2015-05-03 11:01:23,492 - fzl_functions - INFO - Deleted MgII line (Bad doublet ratio): 0.981565
+2015-05-03 11:01:23,493 - fzl_functions - INFO - Deleted MgII line (Bad doublet ratio): 1.57045
+2015-05-03 11:01:23,494 - fzl_functions - INFO - Deleted MgII line (Main Transition < Secondary): 1.57096

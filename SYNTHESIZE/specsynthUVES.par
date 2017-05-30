@@ -1,0 +1,10 @@
+C***************** input parameters for specsynth *****************************
+5128.1352   wave_min - minimum wavelength
+5142.5352   wave_max - maximum wavelength
+0.005 dwave - linear dispersion of sampling in angstroms
+40000.  R_fac - the spectrograph resolution R=lambda/(Delta lambda)
+1.14    slit - the spectrograph slit width in arcseconds
+1       conflag - toggle convolution 1=ON 0=OFF
+3.0     conwindo -  # of inst. profile sigma to include in convolution
+3       resfac - (odd integer) sample rate factor for convolution arrays
+20.     snr - signal to noise ratio

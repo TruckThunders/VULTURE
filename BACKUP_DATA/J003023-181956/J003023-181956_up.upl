@@ -1,0 +1,76 @@
+UVES_popler : Version 0.66 : Thu May 15 2014 17:00:16 MDT (UTC-0600) : mathes
+
+General spectrum specifications:
+ combmeth = 0
+ disp =    2.500000000002
+ filetype = 9
+ helio = 0
+ vacwl = 0
+ zem =  0.0000000
+ linear = 0
+ thar = 0
+Initial sigma-clipping of orders:
+ nordclip = 3
+ nordsig = 35
+ ordsig =    5.0000
+ ordsignbr =    3.0000
+ ordsigzero =    3.0000
+ ordmedfrac =    0.1000
+ ordmedrej =    0.0500
+Spectrum/order combination parameters:
+ clipsig =    3.0000
+ lrgerr =    4.0000
+ rankspec = 0
+ scalmeth = 1
+ scalclip =    3.0000
+ scalerr =    0.2000
+ nscalclip = 5
+Order continuum fitting method parameters:
+ contftyp = 2
+ contord = 4
+ contpctl =    0.1000
+ contsigl =    1.4000
+ contsigu =    3.0000
+ contwgt = 500
+Combined spectrum continuum fitting method parameters:
+ cordlya = 4
+ cordred = 6
+ ftyplya = 2
+ ftypred = 2
+ nocont = 2
+ pctllya =    0.3000
+ pctlred =    0.1000
+ rsiglyal =    1.2000
+ rsiglyau =    3.0000
+ rsigredl =    1.4000
+ rsigredu =    3.0000
+ vclya = 20000.0000
+ vcred = 2500.0000
+ vlya = 5000.0000
+Data file options:
+ dat = 0
+ raw = 0
+ save = 0
+ distort = 0
+
+Number_of_spectra = 0
+000_PATH = /achernar-data/mathes/UVES_SQUAD/J003023-181956/
+ 000_COMB = J003023-181956.fits
+
+Number_of_actions = 5
+001_ACTN = 6  001_RCMB = 0
+ 001_CORD =  4570.80745428  4725.80447876  4601.40241209  4694.38236530
+ 001_FTYP = 2  001_FORD = 14  001_REJL =  1.40  001_REJU =  3.00  001_NXYP = 0
+002_ACTN = 6  002_RCMB = 0
+ 002_CORD =  6765.15041103  6994.55805823  6810.43332734  6948.05088726
+ 002_FTYP = 2  002_FORD = 14  002_REJL =  1.40  002_REJU =  3.00  002_NXYP = 1
+  002_XY_001 = 0   6866.31835938   6882.84863281     59.56719208    426.14315796
+003_ACTN = 6  003_RCMB = 0
+ 003_CORD =  8743.06538296  9039.54453522  8801.58758483  8979.44014553
+ 003_FTYP = 2  003_FORD = 8  003_REJL =  1.40  003_REJU =  3.00  003_NXYP = 0
+004_ACTN = 6  004_RCMB = 0
+ 004_CORD = 10025.56483491 10155.31441851 10051.34792159 10129.26464349
+ 004_FTYP = 2  004_FORD = 4  004_REJL =  1.40  004_REJU =  3.00  004_NXYP = 0
+005_ACTN = 6  005_RCMB = 0
+ 005_CORD = 10181.60099532 10313.36997905 10207.78536552 10286.91476983
+ 005_FTYP = 2  005_FORD = 4  005_REJL =  1.40  005_REJU =  3.00  005_NXYP = 0

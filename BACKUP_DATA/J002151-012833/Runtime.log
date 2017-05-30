@@ -1,0 +1,50 @@
+2015-02-03 18:19:06,526 - __main__ - INFO - ========== Reading in Spectrum ==========
+
+2015-02-03 18:19:06,549 - __main__ - INFO - Ignored first 0 lines of code because they were dumb.
+
+2015-02-03 18:19:08,129 - __main__ - INFO - ========== Initializing Search Arrays ==========
+
+2015-02-03 18:19:08,129 - __main__ - INFO - Searching redward of Lya, starting at 3936.54413557 A.
+2015-02-03 18:19:08,142 - __main__ - INFO - CIV blue_limit = 3936.54413557 red_limit = 3997.88506
+2015-02-03 18:19:08,142 - __main__ - INFO - CIV minz_z = 1.5426668705 max_z = 1.578.
+2015-02-03 18:19:08,142 - __main__ - INFO - MgII blue_limit = 3936.54413557 red_limit = 7227.5028716
+2015-02-03 18:19:08,142 - __main__ - INFO - MgII min_z = 0.407741808379 max_z = 1.578.
+2015-02-03 18:19:09,560 - __main__ - INFO - Run time for prep work: 0.05 mins.
+
+2015-02-03 18:19:09,560 - __main__ - INFO - ========== Beginning Filtering Routines ==========
+
+2015-02-03 18:19:09,566 - __main__ - INFO - Min Value Established: [ 67899.17137599]
+2015-02-03 18:19:09,568 - __main__ - INFO - Max Value Established: [ 67909.17137599]
+2015-02-03 18:20:26,579 - __main__ - INFO - Run time to correlation: 1.33 mins.
+
+2015-02-03 18:20:26,579 - __main__ - INFO - ========== Calculating Power Spectrum Errors ==========
+
+2015-02-03 18:22:25,740 - __main__ - INFO - Params for detection limit fit: m = 0.479930963781   b = -0.000153930937691.
+
+2015-02-03 18:22:25,740 - __main__ - INFO - ========== Finding Lines and Filtering Bad Ones ==========
+
+2015-02-03 18:22:25,758 - __main__ - INFO - ========== CIV Lines detected. Culling bad lines ==========
+
+2015-02-03 18:22:25,759 - __main__ - INFO - --------------------------------------------------------------------------
+2015-02-03 18:22:25,759 - __main__ - INFO - Detected 0 CIV lines:
+2015-02-03 18:22:25,759 - __main__ - INFO - []
+2015-02-03 18:22:25,759 - __main__ - INFO - Detection limit for each detection (Angstrom):
+2015-02-03 18:22:25,759 - __main__ - INFO - []
+2015-02-03 18:22:25,759 - __main__ - INFO - Line sigma:
+2015-02-03 18:22:25,760 - __main__ - INFO - []
+2015-02-03 18:22:25,760 - __main__ - INFO - --------------------------------------------------------------------------
+
+2015-02-03 18:22:25,762 - __main__ - INFO - ========== MgII Lines detected. Culling bad lines ==========
+
+2015-02-03 18:22:25,767 - __main__ - INFO - --------------------------------------------------------------------------
+2015-02-03 18:22:25,768 - __main__ - INFO - Detected 3 MgII lines:
+2015-02-03 18:22:25,768 - __main__ - INFO - [ 0.695095  1.30828   1.30876 ]
+2015-02-03 18:22:25,769 - __main__ - INFO - Detection limit for each detection (Angstrom):
+2015-02-03 18:22:25,769 - __main__ - INFO - [ 0.06134961  0.04325665  0.04308083]
+2015-02-03 18:22:25,770 - __main__ - INFO - Line sigma:
+2015-02-03 18:22:25,770 - __main__ - INFO - [ 13.46130873   5.39806791  14.19981493]
+2015-02-03 18:22:25,771 - __main__ - INFO - --------------------------------------------------------------------------
+
+2015-02-03 18:22:25,784 - __main__ - INFO - Saved plot files in detection redshift directories.
+2015-02-03 18:22:35,177 - __main__ - INFO - Saved plot files in detection redshift directories.
+2015-02-03 18:22:35,177 - __main__ - INFO - Total run time: 3.48 mins.

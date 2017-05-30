@@ -1,0 +1,21 @@
+REQUIREMENTS: Files needed to run properly.
+ - zem.dat - a file in each J* directory which has only the emission redshift of the quasar in it
+ - atoms.dat - a file in a location of your choice (can be linked to in find_z_lines) which has all of the atomic data you want to analyze.
+ - list_batch.txt - A file with all of the J* directory names for batcaller.pl to loop over
+ - batchcaller.pl -  a wrapper to run programs over a series of J* directories
+ - fzl_functions.py - A file containing the functions required to run find_z_lines
+
+1.) Use by calling find_z_lines:
+
+    a.) Clean out a directory as if you had not run find_z_lines.py yet.
+    	>> python find_z_lines.py clean
+
+    b.) Run find_z_lines.py inside one J* directory.
+    	>> python [-i] find_z_lines.py JNAME.data
+
+2.) Using batchcaller.pl
+
+    perl batchcaller.pl list_of_dirs.txt [clean]
+
+    Runs find_z_lines if only list_of_dirs.txt given. If the optional keyword "clean" is given, it will clean redshift directories from list_of_dirs directories.
+

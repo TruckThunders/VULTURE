@@ -1,0 +1,82 @@
+2015-03-09 14:44:00,546 - __main__ - INFO - ========== Reading in file ==========
+
+2015-03-09 14:44:00,546 - __main__ - INFO - Next because: --------------------------------------------------------------------------
+
+2015-03-09 14:44:00,547 - __main__ - INFO - Next because: Redshift         EW_limit         Power_Rating
+
+2015-03-09 14:44:00,547 - __main__ - INFO - Found good row.
+2015-03-09 14:44:00,547 - __main__ - INFO - Found good row.
+2015-03-09 14:44:00,547 - __main__ - INFO - Found good row.
+2015-03-09 14:44:00,547 - __main__ - INFO - Found good row.
+2015-03-09 14:44:00,547 - __main__ - INFO - Found good row.
+2015-03-09 14:44:00,547 - __main__ - INFO - Found good row.
+2015-03-09 14:44:00,547 - __main__ - INFO - Found good row.
+2015-03-09 14:44:00,547 - __main__ - INFO - Found good row.
+2015-03-09 14:44:00,547 - __main__ - INFO - Found good row.
+2015-03-09 14:44:00,547 - __main__ - INFO - Found good row.
+2015-03-09 14:44:00,547 - __main__ - INFO - Found good row.
+2015-03-09 14:44:00,547 - __main__ - INFO - Found good row.
+2015-03-09 14:44:00,547 - __main__ - INFO - Found good row.
+2015-03-09 14:44:00,548 - __main__ - INFO - Next because: --------------------------------------------------------------------------
+
+2015-03-09 14:44:00,548 - __main__ - INFO - Next because: --------------------------------------------------------------------------
+
+2015-03-09 14:44:00,548 - __main__ - INFO - Next because: Redshift         EW_limit         Power_Rating
+
+2015-03-09 14:44:00,548 - __main__ - INFO - Found good row.
+2015-03-09 14:44:00,548 - __main__ - INFO - Found good row.
+2015-03-09 14:44:00,548 - __main__ - INFO - Found good row.
+2015-03-09 14:44:00,548 - __main__ - INFO - Found good row.
+2015-03-09 14:44:00,548 - __main__ - INFO - Found good row.
+2015-03-09 14:44:00,548 - __main__ - INFO - Found good row.
+2015-03-09 14:44:00,548 - __main__ - INFO - Found good row.
+2015-03-09 14:44:00,548 - __main__ - INFO - Found good row.
+2015-03-09 14:44:00,548 - __main__ - INFO - Found good row.
+2015-03-09 14:44:00,549 - __main__ - INFO - Found good row.
+2015-03-09 14:44:00,549 - __main__ - INFO - Next because: --------------------------------------------------------------------------
+
+2015-03-09 14:44:00,549 - __main__ - INFO - ========== Detections read in. Analyzing. ==========
+
+2015-03-09 14:44:00,549 - __main__ - INFO - Checking directory 1.793765 because power = 5.51439971312
+2015-03-09 14:44:27,888 - __main__ - INFO - Bad detection. 1.793765 moved to FalsePositive directory.
+2015-03-09 14:44:27,893 - __main__ - INFO - Checking directory 2.02124 because power = 5.17347460682
+2015-03-09 14:44:32,432 - __main__ - INFO - Good detection. Keeping things.
+2015-03-09 14:44:32,432 - __main__ - INFO - Checking directory 2.196815 because power = 5.09309518519
+2015-03-09 14:44:51,480 - __main__ - INFO - Bad detection. 2.196815 moved to FalsePositive directory.
+2015-03-09 14:44:51,500 - __main__ - INFO - Checking directory 2.397035 because power = 9.91736329522
+2015-03-09 14:47:52,377 - __main__ - INFO - Good detection. Keeping things.
+2015-03-09 14:47:52,377 - __main__ - INFO - Checking directory 2.421305 because power = 9.91299546487
+2015-03-09 14:48:00,771 - __main__ - INFO - Good detection. Keeping things.
+2015-03-09 14:48:00,771 - __main__ - INFO - Checking directory 2.46617 because power = 7.75353512833
+2015-03-09 14:48:05,250 - __main__ - INFO - Good detection. Keeping things.
+2015-03-09 14:48:05,250 - __main__ - INFO - Checking directory 2.46695 because power = 13.0381817098
+2015-03-09 14:48:08,226 - __main__ - INFO - Good detection. Keeping things.
+2015-03-09 14:48:08,226 - __main__ - INFO - Checking directory 2.467595 because power = 9.03334041739
+2015-03-09 14:48:10,610 - __main__ - INFO - Good detection. Keeping things.
+2015-03-09 14:48:10,610 - __main__ - INFO - Checking directory 2.531105 because power = 13.0785832579
+2015-03-09 14:48:16,922 - __main__ - INFO - Good detection. Keeping things.
+2015-03-09 14:48:16,922 - __main__ - INFO - Checking directory 0.880765 because power = 10.2289078058
+2015-03-09 14:48:32,947 - __main__ - INFO - Bad detection. 0.880765 moved to FalsePositive directory.
+2015-03-09 14:48:32,952 - __main__ - INFO - Checking directory 1.587715 because power = 6.37781429249
+2015-03-09 14:48:48,971 - __main__ - INFO - Bad detection. 1.587715 moved to FalsePositive directory.
+2015-03-09 14:48:48,976 - __main__ - INFO - Checking directory 1.58782 because power = 6.4326582714
+2015-03-09 14:48:57,562 - __main__ - INFO - Bad detection. 1.58782 moved to FalsePositive directory.
+2015-03-09 14:48:57,596 - __main__ - INFO - Checking directory 2.156185 because power = 8.4635966389
+2015-03-09 14:49:35,107 - __main__ - INFO - Good detection. Keeping things.
+2015-03-09 14:49:35,107 - __main__ - INFO - Checking directory 2.212255 because power = 6.76146132987
+2015-03-09 14:49:41,267 - __main__ - INFO - Bad detection. 2.212255 moved to FalsePositive directory.
+2015-03-09 14:49:41,274 - __main__ - INFO - Checking directory 2.228545 because power = 6.99974980898
+2015-03-09 14:51:14,635 - __main__ - INFO - Bad detection. 2.228545 moved to FalsePositive directory.
+2015-03-09 14:51:14,655 - __main__ - INFO - Checking directory 2.462665 because power = 5.60762430234
+2015-03-09 14:51:26,587 - __main__ - INFO - Bad detection. 2.462665 moved to FalsePositive directory.
+2015-03-09 14:51:26,593 - __main__ - INFO - Final redshift list: {'CIV': array(['1.8611', '2.02124', '2.397035', '2.40179', '2.403665', '2.421305',
+       '2.46617', '2.46695', '2.467595', '2.46863', '2.531105'], 
+      dtype='|S8'), 'MgII': array(['0.883105', '1.022845', '1.023445', '2.156185'], 
+      dtype='|S8')}
+2015-03-09 14:51:26,594 - __main__ - INFO - Final ewlimit list: {'CIV': array([ 0.02745775,  0.05898262,  0.0225358 ,  0.02432468,  0.0237867 ,
+        0.02834035,  0.02201008,  0.02275516,  0.0226091 ,  0.02228264,
+        0.01270219]), 'MgII': array([ 0.02246754,  0.02132648,  0.02136024,  0.07602887])}
+2015-03-09 14:51:26,595 - __main__ - INFO - Final power rating list: {'CIV': array([ 45.51786905,   5.17347461,   9.9173633 ,  38.58960352,
+        48.77078914,   9.91299546,   7.75353513,  13.03818171,
+         9.03334042,  31.13002683,  13.07858326]), 'MgII': array([ 26.38139038,  39.04600748,  53.16900381,   8.46359664])}
+2015-03-09 14:51:26,595 - __main__ - INFO - Writing detections_real.dat

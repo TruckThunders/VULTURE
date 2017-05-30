@@ -1,0 +1,29 @@
+2015-03-09 14:43:49,570 - __main__ - INFO - ========== Reading in file ==========
+
+2015-03-09 14:43:49,571 - __main__ - INFO - Next because: --------------------------------------------------------------------------
+
+2015-03-09 14:43:49,571 - __main__ - INFO - Next because: Redshift         EW_limit         Power_Rating
+
+2015-03-09 14:43:49,571 - __main__ - INFO - Next because: --------------------------------------------------------------------------
+
+2015-03-09 14:43:49,571 - __main__ - INFO - Next because: --------------------------------------------------------------------------
+
+2015-03-09 14:43:49,571 - __main__ - INFO - Next because: Redshift         EW_limit         Power_Rating
+
+2015-03-09 14:43:49,571 - __main__ - INFO - Found good row.
+2015-03-09 14:43:49,571 - __main__ - INFO - Found good row.
+2015-03-09 14:43:49,571 - __main__ - INFO - Found good row.
+2015-03-09 14:43:49,571 - __main__ - INFO - Next because: --------------------------------------------------------------------------
+
+2015-03-09 14:43:49,571 - __main__ - INFO - ========== Detections read in. Analyzing. ==========
+
+2015-03-09 14:43:49,571 - __main__ - INFO - Checking directory 0.695095 because power = 13.4613087281
+2015-03-09 14:43:54,784 - __main__ - INFO - Good detection. Keeping things.
+2015-03-09 14:43:54,784 - __main__ - INFO - Checking directory 1.30828 because power = 5.39806790622
+2015-03-09 14:43:58,256 - __main__ - INFO - Good detection. Keeping things.
+2015-03-09 14:43:58,256 - __main__ - INFO - Checking directory 1.30876 because power = 14.199814931
+2015-03-09 14:44:00,312 - __main__ - INFO - Good detection. Keeping things.
+2015-03-09 14:44:00,312 - __main__ - INFO - Final redshift list: {'CIV': [], 'MgII': ['0.695095', '1.30828', '1.30876']}
+2015-03-09 14:44:00,313 - __main__ - INFO - Final ewlimit list: {'CIV': [], 'MgII': [0.0613496079618, 0.0432566483184, 0.0430808277607]}
+2015-03-09 14:44:00,313 - __main__ - INFO - Final power rating list: {'CIV': [], 'MgII': [13.4613087281, 5.39806790622, 14.199814931]}
+2015-03-09 14:44:00,313 - __main__ - INFO - Writing detections_real.dat

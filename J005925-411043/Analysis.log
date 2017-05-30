@@ -1,0 +1,27 @@
+2015-03-09 15:29:27,562 - __main__ - INFO - ========== Reading in file ==========
+
+2015-03-09 15:29:27,563 - __main__ - INFO - Next because: --------------------------------------------------------------------------
+
+2015-03-09 15:29:27,563 - __main__ - INFO - Next because: Redshift         EW_limit         Power_Rating
+
+2015-03-09 15:29:27,563 - __main__ - INFO - Found good row.
+2015-03-09 15:29:27,563 - __main__ - INFO - Found good row.
+2015-03-09 15:29:27,563 - __main__ - INFO - Next because: --------------------------------------------------------------------------
+
+2015-03-09 15:29:27,563 - __main__ - INFO - Next because: --------------------------------------------------------------------------
+
+2015-03-09 15:29:27,563 - __main__ - INFO - Next because: Redshift         EW_limit         Power_Rating
+
+2015-03-09 15:29:27,563 - __main__ - INFO - Next because: --------------------------------------------------------------------------
+
+2015-03-09 15:29:27,563 - __main__ - INFO - ========== Detections read in. Analyzing. ==========
+
+2015-03-09 15:29:27,563 - __main__ - INFO - Checking directory 1.452605 because power = 12.4515156196
+2015-03-09 15:29:35,064 - __main__ - INFO - Bad detection. 1.452605 moved to FalsePositive directory.
+2015-03-09 15:29:35,070 - __main__ - INFO - Checking directory 1.472 because power = 7.02226728132
+2015-03-09 15:29:44,680 - __main__ - INFO - Bad detection. 1.472 moved to FalsePositive directory.
+2015-03-09 15:29:44,685 - __main__ - INFO - Final redshift list: {'CIV': array([], 
+      dtype='|S8'), 'MgII': []}
+2015-03-09 15:29:44,685 - __main__ - INFO - Final ewlimit list: {'CIV': array([], dtype=float64), 'MgII': []}
+2015-03-09 15:29:44,685 - __main__ - INFO - Final power rating list: {'CIV': array([], dtype=float64), 'MgII': []}
+2015-03-09 15:29:44,685 - __main__ - INFO - Writing detections_real.dat
