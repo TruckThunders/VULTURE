@@ -262,7 +262,7 @@ try:
 
     #================ INSERT FAKE LINES AND DETERMINE DETECTION LIMIT =======================
 
-    num_fake_lines = 0
+    num_fake_lines = 1000
 
     lower_lim = min(lower.values()) + 0.01
     upper_lim = max(upper.values()) - 0.01
